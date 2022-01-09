@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: lato;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.39);
+}
+
+.quizContain {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(245, 19, 19);
+}
+
+.welcome_text {
+    width: 400px;
+}
+
+.welcome_form {
+    width: 100%;
+}
+
+.welcome_form input,
+button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.welcome_form input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.247);
+    color: white;
+    outline: none;
+    font-size: 25pt;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.welcome_form input:focus {
+    border-color: rgb(255, 255, 255);
+}
+
+.welcome_form button {
+    padding: 20px 0;
+    background: white;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    font-size: 20pt;
+    transition: all 0.4s;
+    cursor: pointer;
+    color: rgb(245, 19, 19);
+}
+
+.welcome_form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 10px 15px 1px rgba(0, 0, 0, 0.377);
+}
+
+.quiz {
+    display: grid;
+    grid-template-rows: 60px auto;
+    width: 70%;
+    background: white;
+    height: 500px;
+    border-radius: 3px;
+}
+
+.quizHead {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    box-shadow: 0px 2px 5px 1px rgb(139, 139, 139);
+    z-index: 1;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4%;
+    background: rgb(245, 19, 19);
+    color: white;
+}
+
+.quizBody {
+    background: rgb(240, 240, 240);
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 3%;
+}
+
+.option_group {
+    padding: 2%;
+    list-style: none;
+}
+
+.option {
+    background: white;
+    width: 300px;
+    padding: 17px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+    margin-bottom: 2%;
+}
+
+.option:hover {
+    border: 2px solid rgb(245, 19, 19);
+    color: rgb(165, 0, 0);
+}
+
+.btnNext {
+    width: 200px;
+    height: 50px;
+    padding: 0 2%;
+    margin-left: 15px;
+    background: rgb(245, 19, 19);
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    transition: all 0.5s;
+    outline: none;
+}
+
+.btnNext:hover {
+    background: white;
+    color: rgb(165, 0, 0);
+    box-shadow: 0px 1px 5px 1px grey;
+}
+
+.active {
+    background: rgb(245, 19, 19);
+    color: white !important;
+}
+
+.awardIcon {
+    color: white;
+    font-size: 300px;
+}
+
+.result {
+    color: white;
+    text-align: center;
+}
+
+.result h1 {
+    font-weight: 400;
+    font-size: 30pt;
+}
+
+.result p {
+    font-size: 13pt;
+}
+
+.resulth1,
+p {
+    margin-top: 10px;
+}
